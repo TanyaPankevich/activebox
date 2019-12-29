@@ -1,0 +1,28 @@
+.img-align() {
+    object-fit: cover;
+    object-position: center center;
+}
+
+.flex-between() {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-center() {
+    display: flex;
+    justify-content: center;
+}
+
+.btn(@font-size-additional) {
+     display: block;
+     border: none;
+     margin: 0 auto;
+     background-color: @color-bg-additional;
+     border-radius: 2px;
+     font: 600 @font-size-additional/1.2 @font-prime;
+     text-align: center;
+    text-transform: uppercase;
+    color: @color-white;
+    transition-property: color;
+    transition-duration: 0.2s;
+}

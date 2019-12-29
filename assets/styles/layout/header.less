@@ -1,0 +1,41 @@
+.logo {
+    height: 22px;
+    display: inline-block;
+
+    img {
+        width: 180px;
+    }
+}
+
+nav {
+    text-align: right;
+    display: inline-block;
+
+    a {
+        font: bold @font-size-additional/1.2 @font-prime;
+        text-transform: uppercase;
+        color: @color-white;
+        padding: 4px 29px;
+        display: inline-block;
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+.header-line {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    .flex-between ();
+
+    &::before {
+        content: '';
+        display: block;
+        border: 1px solid #505269;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}

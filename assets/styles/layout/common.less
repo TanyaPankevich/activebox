@@ -1,0 +1,27 @@
+.wrapper {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        color: @color-bg-additional;
+    }
+}
+
+button {
+    cursor: pointer;
+    
+    &:hover {
+        color: @color-text-prime;
+    }
+}
